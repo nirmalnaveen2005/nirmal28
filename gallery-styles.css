@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("https://th.bing.com/th/id/R.68f91709dc39ce2bc5a75dce9c964b08?rik=C9aiLEq6ikN5sg&riu=http%3a%2f%2fspeedhunters-wp-production.s3.amazonaws.com%2fwp-content%2fuploads%2f2020%2f03%2f04125008%2fDSC00197.jpg&ehk=Lxp5rENRuzWCqpTtecp%2f6yS%2bLmRzn%2bAxYN4Wqrv28Gc%3d&risl=&pid=ImgRaw&r=0"), black;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+   
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    font-size: 27px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+header a:hover {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.gallery-item {
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px black;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    background: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.gallery-item .description {
+    display: none; 
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.gallery-item .description {
+    display: none; 
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute; 
+    bottom: 0;
+    width: 100%; 
+    opacity: 0; 
+}
+
+.gallery-item.active .description {
+    display: block; 
+    opacity: 1; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
